@@ -1,3 +1,14 @@
-<h1>HI</h1>
+<h1><%= @recipes[0] %></h1>
 
-<%= @recipes %>
+  <h3>Description</h3>
+    <p><%= @recipes[2] %></p>
+
+  <h3>Ingredients</h3>
+    <ul>
+      <% @ingredients.each do |ingredient| %>
+        <li><%= ingredient %></li>
+      <% end %>
+    </ul>
+
+  <h3>Instructions</h3>
+    <p><%= @recipes[3] %></p>
